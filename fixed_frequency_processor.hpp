@@ -4,7 +4,7 @@
 #include <vector>
 #include <functional>
 #include <iostream>
-#include "../periodic_signal/periodic_signal.hpp"
+#include "sbpt_generated_includes.hpp"
 
 /**
  * @brief A class for processing IDs at a fixed frequency.
