@@ -17,6 +17,7 @@ class FixedFrequencyProcessor {
     PeriodicSignal periodic_signal;
 
   public:
+    std::vector<double> delta_times_for_server_ticks_that_did_not_have_a_kmu;
     bool processed_at_least_one_id = false;
     /**
      * @brief Constructs a FixedFrequencyProcessor.

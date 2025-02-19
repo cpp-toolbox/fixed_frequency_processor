@@ -1,7 +1,7 @@
 #include "fixed_frequency_processor.hpp"
 
 FixedFrequencyProcessor::FixedFrequencyProcessor(int frequency, std::function<void(int, double)> process_fun)
-    : process_fun(process_fun), periodic_signal(frequency) {}
+    : process_fun(process_fun), periodic_signal(frequency, OperationMode::PERFECT_DELTAS) {}
 
 void FixedFrequencyProcessor::add_id(int id) {
     std::cout << "FFP Adding ID: " << id << std::endl;
